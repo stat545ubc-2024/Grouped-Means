@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Group.Means
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of Group.Means is to calculate the mean of a variable of specified groups
+
+## Installation
+
+You can install the development version of Group.Means by accessing the online repository like so:
+
+```{r}
+library(devtools)
+devtools::install_github("stat545ubc-2024/Grouped-Means")
+
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(Group.Means)
+library(gapminder)
+#Finding the average life expectancy by country in the gapminder dataset
+answer1.0 <-group_mean(gapminder, country, lifeExp)
+print(answer1.0)
+```
+

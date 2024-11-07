@@ -1,0 +1,86 @@
+---
+title: "Grouped.Means"
+author: "Julia D"
+date: "2024-11-07"
+output: html_document
+---
+
+Library Loading
+```{r}
+library(devtools)
+library(tidyverse)
+library(palmerpenguins)
+library(dplyr)
+
+```
+
+```{r}
+use_git()
+
+```
+
+Writing out my function from assignment B1
+```{r}
+
+group_mean <-function(data, group_var, mean_var) {
+  if(!is.numeric(data[[deparse(substitute(mean_var))]])) {
+    stop('Sorry, this function requires a numeric variable')
+    }
+  data %>%
+    group_by({{group_var}}) %>%
+     summarise(mean = mean({{mean_var}}, na.rm = TRUE))
+  }
+```
+
+```{r}
+use_r("group_mean")
+
+```
+Loading function to make it available for experimentation
+```{r}
+load_all()
+
+```
+
+```{r}
+exists("group_mean", where = globalenv(), inherits = FALSE)
+
+```
+Running a check
+```{r}
+check()
+
+```
+Creating the License
+```{r}
+use_mit_license()
+```
+Creating Man file documentation
+```{r}
+
+document()
+
+```
+Installing Package!
+```{r}
+install()
+
+```
+
+##Exercise 4
+Making the tests to be called when using the function
+
+```{r}
+usethis::use_test("group_mean")
+
+devtools::test()
+
+
+```
+Passes the test!
+Using the package 
+```{r}
+use_package("group_mean")
+
+```
+
