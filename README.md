@@ -10,7 +10,7 @@ The goal of Group.Means is to calculate the mean of a variable of
 specified groups
 
 ## Files in this repo
-There are folders for the R file, Man file, and tests to run with this package. There are also license, documentation, and namespace files in the main repository.
+There are folders for the R file, Man file, and tests to run with this package. There are also License files for this package, documentation of the package requirements/other details, and namespace files in the main repository. You can also find the rmd where the files were created titled "Grouped.Means.Rmd".
 
 ## Installation
 
