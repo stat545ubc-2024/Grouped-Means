@@ -2,7 +2,7 @@ Package: Group.Means
 Title: Groups By Categorical Variable And Calculates Mean Per Group
 Version: 1.0.0.0
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Julia", "Desbiens", , "juliad22@student.ubc.ca", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: This package accesses a dataset of choice and groups by a specific variable, then, it will calculate the mean of a specified numeric variable. This fn removes NA values.
 License: MIT + file LICENSE
@@ -10,8 +10,7 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports: 
-    dplyr,
-    group_mean
+    dplyr
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
