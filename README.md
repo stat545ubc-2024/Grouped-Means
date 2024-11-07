@@ -9,6 +9,9 @@
 The goal of Group.Means is to calculate the mean of a variable of
 specified groups
 
+## Files in this repo
+There are folders for the R file, Man file, and tests to run with this package. There are also license, documentation, and namespace files in the main repository.
+
 ## Installation
 
 You can install the development version of Group.Means by accessing the
